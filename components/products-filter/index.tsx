@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Checkbox from './form-builder/checkbox';
 
-import Slider from 'rc-slider';
+// import Slider from 'rc-slider';
 
 // data
 import productsTypes from './../../utils/data/products-types';
 
-const { createSliderWithTooltip } = Slider;
+// const { createSliderWithTooltip } = Slider;
 
 const ProductsFilter = () => {
   const [filtersOpen, setFiltersOpen] = useState(false);
