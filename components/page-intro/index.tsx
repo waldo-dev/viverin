@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import {  SwiperSlide } from "swiper/react";
 import SwiperCore, { EffectFade, Navigation } from "swiper";
 
 SwiperCore.use([EffectFade, Navigation]);
