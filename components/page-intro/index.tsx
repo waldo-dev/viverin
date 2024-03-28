@@ -6,7 +6,7 @@ SwiperCore.use([EffectFade, Navigation]);
 const PageIntro = () => {
   return (
     <section className="page-intro">
-      <Swiper navigation effect="fade" className="swiper-wrapper">
+      {/* <Swiper navigation effect="fade" className="swiper-wrapper"> */}
         <SwiperSlide>
           <div
             className="page-intro__slide"
@@ -14,16 +14,16 @@ const PageIntro = () => {
           >
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Compra en viverin</h2>
+                <h2>PAISAJES DEL SOL</h2>
                 <a href="/products" className="btn-shop">
-                  <i className="icon-right"></i>Todos los productos
+                Venta e instalación de cubresuelos y arbustos de bajo consumo hídrico
                 </a>
               </div>
             </div>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div
             className="page-intro__slide"
             style={{ backgroundImage: "url('/images/slide-2.jpg')" }}
@@ -37,8 +37,8 @@ const PageIntro = () => {
               </div>
             </div>
           </div>
-        </SwiperSlide>
-      </Swiper>
+        </SwiperSlide> */}
+      {/* </Swiper> */}
 
       <div className="shop-data">
         <div className="container">

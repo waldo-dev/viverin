@@ -1116,9 +1116,9 @@ h5 {
     margin-bottom: 150px;
   }
   .section__intro {
-    margin-bottom: 36px;
+    margin-bottom: 20px;
     @include breakpoint(phone) {
-      margin-bottom: 93px;
+      margin-bottom: 60px;
     }
     h4 {
       color: var(--text-primary);
@@ -1943,7 +1943,7 @@ h5 {
     display: flex;
     h4 {
       font-weight: 400;
-      color: #ff0000;
+      color: #000000;
       font-size: 18px;
       @include breakpoint(phone) {
         font-size: 30px;
@@ -2531,9 +2531,7 @@ h5 {
 
 .back-button-section {
   padding: 30px 0;
-  margin-bottom: 30px;
   @include breakpoint(phone) {
-    margin-bottom: 50px;
     padding: 50px 0;
   }
   a {

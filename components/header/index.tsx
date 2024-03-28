@@ -62,9 +62,8 @@ const Header = ({ isErrorPage }: HeaderType) => {
     <header className={`site-header ${!onTop ? "site-header--fixed" : ""}`}>
       <div className="container">
         <Link href="/">
-          <h1 className="site-logo">
-            <Logo />
-            Viverin
+          <h1 className="site-logo" style={{fontWeight: "bold"}}>
+            Paisajes del Sol
           </h1>
         </Link>
         <nav
@@ -72,8 +71,10 @@ const Header = ({ isErrorPage }: HeaderType) => {
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}
         >
           <Link href="/products">Productos</Link>
-          <a href="#">Contacto</a>
-          <a href="#">Envios</a>
+          <Link href="/products">Instalación y jardines</Link>
+          <Link href="/envios">Envíos</Link>
+          <Link href="/contact">Contacto</Link>
+          <Link href="/faq">Preguntas frecuentes</Link>
           <button className="site-nav__btn">
             <p>Account</p>
           </button>
@@ -86,7 +87,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               searchOpen ? "search-form--active" : ""
             }`}
           >
-            <form className={`search-form`}>
+            {/* <form className={`search-form`}>
               <i
                 className="icon-cancel"
                 onClick={() => setSearchOpen(!searchOpen)}
@@ -96,11 +97,12 @@ const Header = ({ isErrorPage }: HeaderType) => {
                 name="search"
                 placeholder="Escribe el producto que buscas"
               />
-            </form>
+            </form> 
             <i
               onClick={() => setSearchOpen(!searchOpen)}
               className="icon-search"
             ></i>
+            */}
           </button>
           <DarkModeSwitch
             className="dark-toggle"
@@ -118,7 +120,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               )}
             </button>
           </Link>
-          <Link href="/login" legacyBehavior>
+          {/* <Link href="/login" legacyBehavior>
             <button className="site-header__btn-avatar">
               <i className="icon-avatar"></i>
             </button>
@@ -130,7 +132,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
             <i className="btn-hamburger">
               <span></span>
             </i>
-          </button>
+          </button> */}
         </div>
       </div>
     </header>

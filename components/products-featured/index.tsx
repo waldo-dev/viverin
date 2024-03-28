@@ -9,7 +9,7 @@ const ProductsFeatured = () => {
     <section className="section section-products-featured">
       <div className="container">
         <header className="section-products-featured__header">
-          <h3>Elige tu cubresuelo ideal</h3>
+          <h3>Nuestros productos</h3>
           <a href="/products" className="btn btn--rounded btn--border">Ver todos</a>
         </header>
 

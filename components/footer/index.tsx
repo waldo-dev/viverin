@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="site-footer__top">
           <div className="site-footer__description">
             <h6>
-              <Logo /> Viverin
+              <Logo /> Paisajes del Sol
             </h6>
             <p>
               La casa de los cubresuelos más hermosos
@@ -90,7 +90,7 @@ const Footer = () => {
 
       <div className="site-footer__bottom">
         <div className="container">
-          <p>Vivero Hermoso - © 2023. Todo ficha.</p>
+          <p>Vivero Paisajes Del Sol - © 2023.</p>
         </div>
       </div>
     </footer>
