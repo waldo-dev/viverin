@@ -36,10 +36,10 @@ const Success = () => {
                     ]
                 })
                 
-                const emailBody = {
-                    items: JSON.stringify(theItems),
-                    paymentStatus: preference.data.auto_return,
-                }
+                // const emailBody = {
+                //     items: JSON.stringify(theItems),
+                //     paymentStatus: preference.data.auto_return,
+                // }
 
                 // const emailBodyToClient = {
                 //     reply_to: 
