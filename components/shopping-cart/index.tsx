@@ -31,34 +31,36 @@ const ShoppingCart = () => {
                   <th style={{textAlign: 'left'}}>Producto</th>
                 </tr>
 
-                {cartItems.map(item => (
+                {cartItems.map(item => {
+                  const itemPrice = item.price * item.count
+                  return (
                   <Item 
                     key={item.id}
                     id={item.id}
                     thumb={item.thumb}
                     name={item.name}
                     color={item.color}
-                    price={item.price}
+                    price={itemPrice}
                     size={item.size}
                     count={item.count}
                   />
-                ))}
+                )})}
               </tbody>
             </table> 
           } 
           
           {cartItems.length === 0 && 
-            <p>Nada en el carrito :(</p>
+            <p>Nada en el carrito</p>
           }
         </div>
       
         <div className="cart-actions">
-          <a href="/products" className="cart__btn-back"><i className="icon-left"></i> Continuar comprando</a>
+          <a href="/products" className="cart__btn-back"><i className="icon-left"></i>Continuar comprando</a>
           <input type="text" placeholder="Codigo de promoción" className="cart__promo-code" />
 
           <div className="cart-actions__items-wrapper">
-            <p className="cart-actions__total">Precio total <strong>${priceTotal().toFixed(2)}</strong></p>
-            <a href="/cart/checkout" className="btn btn--rounded btn--yellow">Pagar</a>
+            <p className="cart-actions__total">Precio total <strong>${priceTotal()}</strong></p>
+            <a href="/cart/checkout" className="btn btn--rounded btn--yellow" style={{color: "#fff"}}>Pagar</a>
           </div>
         </div>
       </div>

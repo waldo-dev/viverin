@@ -1,38 +1,38 @@
 import Layout from "../layouts/Main";
 import Link from "next/link";
 import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
-//   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS;
-//   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID_CONTACT_EMAILJS;
-//   const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY_EMAILJS;
+  const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS;
+  const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID_CONTACT_EMAILJS;
+  const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY_EMAILJS;
 
   const {
-    // handleSubmit,
+    handleSubmit,
     formState: { errors },
   } = useForm();
 
-//   const handleOnSubmit = React.useCallback((e: any) => {
-//     e.preventDefault();
-//     if (serviceId && templateId && publicKey) {
-//       emailjs
-//         .sendForm(serviceId, templateId, form.current as any, {
-//           publicKey: publicKey,
-//         })
-//         .then(
-//           () => {
-//             console.log("SUCCESS!");
-//           },
-//           (error: any) => {
-//             console.log("FAILED...", error.text);
-//           }
-//         );
-//     }
-//   }, []);
+  const handleOnSubmit = React.useCallback((e: any) => {
+    e.preventDefault();
+    if (serviceId && templateId && publicKey) {
+      emailjs
+        .sendForm(serviceId, templateId, form.current as any, {
+          publicKey: publicKey,
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error: any) => {
+            console.log("FAILED...", error.text);
+          }
+        );
+    }
+  }, []);
 
   return (
     <Layout>
@@ -53,7 +53,7 @@ const Contact = () => {
             <form
               ref={form}
               className="form"
-            //   onSubmit={(e) => handleSubmit(handleOnSubmit(e) as any)}
+              onSubmit={(e) => handleSubmit(handleOnSubmit(e) as any)}
             >
               <div className="form__input-row">
                 <input

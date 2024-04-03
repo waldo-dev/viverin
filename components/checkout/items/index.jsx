@@ -20,6 +20,18 @@ const CheckoutItems = () => {
           <h3>${item.price}</h3>
         </li>
       ))}
+      <li className="checkout-item">
+          <div className="checkout-item__content">
+            {/* <div className="checkout-item__img">
+              <img src={item.thumb} />
+            </div> */}
+
+            <div className="checkout-item__data">
+              <h3>Envio</h3>
+            </div>
+          </div>
+          <h3>$3000</h3>
+        </li>
     </ul>
   );
 };
