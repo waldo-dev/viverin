@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
 import axios from 'axios';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 // const URL = process.env.NEXT_PUBLIC_SITE_URL;
 // const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID_MAXI;
