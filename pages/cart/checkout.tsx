@@ -12,7 +12,7 @@ import MercadoPagoButton from '../../components/mercadopago-button/index'
 
 const CheckoutPage = () => {
   const [datosEnvio, setDatosEnvio] = React.useState(false);
-  const { cartItems } = useSelector((state: any) => state.cart);
+  // const { cartItems } = useSelector((state: any) => state.cart);
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS;
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID_ENVIO_EMAILJS;
   const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY_EMAILJS;
